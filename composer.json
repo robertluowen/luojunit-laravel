@@ -1,0 +1,24 @@
+{
+    "name": "robertluowen\/luojunit-laravel",
+    "description": "A simplified version of the laravel framework unit test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "robert",
+            "email": "757120778@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Robertluowen\\LuojunitLaravel\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Robertluowen\\LuojunitLaravel\\Providers\\LuojunitServiceProvider"
+            ]
+        }
+    }
+}
