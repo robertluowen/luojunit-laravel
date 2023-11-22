@@ -26,7 +26,6 @@ class LuojunitServiceProvider extends ServiceProvider
     {
     }
 
-    //参考别人的写法
     private function registerRoutes()
     {
         Route::group($this->routeConfiguration(), function () {

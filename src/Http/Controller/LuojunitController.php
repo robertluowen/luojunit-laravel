@@ -15,10 +15,8 @@ class LuojunitController extends Controller
 {
     public function index()
     {
-//        echo 1;
         return view('junit::index');
     }
-    // 如下内容，想要丰富就自个完善吧
     public function store(Request $request)
     {
         $namespace  = $request->input('namespace');
@@ -26,7 +24,7 @@ class LuojunitController extends Controller
         $action     = $request->input('action');
         $param      = $request->input('param');
         $class = ($className == "") ? $namespace : $namespace.'\\'.$className;
-        // 要提换的值  需要的结果
+        // 要替换的值  需要的结果
         $class = str_replace("/", "\\", $class);
         $object = new $class();
         $param = ($param == "") ? [] : explode('|', $param) ;
